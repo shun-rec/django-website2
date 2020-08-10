@@ -1,0 +1,15 @@
+{% load static %}
+<!doctype HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'main.css' %}">
+    </head>
+    <body>
+        {% include "_navbar.html" %}
+        <div>
+            {% block main %}
+            {% endblock %}
+        </div>
+        {% include "_footer.html" %}
+    </body>
+</html>
