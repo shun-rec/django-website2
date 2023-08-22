@@ -1,13 +1,17 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block main %}
-{% if username == "Shun" %}
+{% if username == "shouhei" %}
 <h1>自分です。</h1>
 {% elif username %}
-<h1>{{ username }}さん、ようこそ！Shunのホームページです。</h1>
+<h1>{{ username }}さん、ようこそ！shouheiのホームページです。</h1>
 {% else %}
-<h1>匿名ユーザーさん、ようこそ！Shunのホームページです。</h1>
+<h1>匿名ユーザーさん、ようこそ！canapeのホームページです。</h1>
 {% endif %}
-<img src="{% static 'welcome.jpg' %}" />
+<img src="{% static 'bara.png' %}" alt="Bara Image">
+<p>リファレンス</p>
+<a href="https://www.youtube.com/watch?v=b6XnrM_zK1s&list=PLuCS8p0T7ozK4Ne1e5eAVG2R5Gbs1naix&index=2">前回</a>
+<a href="https://youtu.be/b6XnrM_zK1s?list=PLuCS8p0T7ozK4Ne1e5eAVG2R5Gbs1naix&t=557">次回ここから</a>
 {% endblock %}
+
+
