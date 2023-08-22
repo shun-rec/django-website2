@@ -1,15 +1,19 @@
 {% load static %}
 <!doctype HTML>
-<html>
-    <head>
-        <link rel="stylesheet" href="{% static 'main.css' %}">
-    </head>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <title>website</title>
+</head>
     <body>
         {% include "_navbar.html" %}
-        <div>
             {% block main %}
+           
             {% endblock %}
-        </div>
         {% include "_footer.html" %}
+      
     </body>
 </html>

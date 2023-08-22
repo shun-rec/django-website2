@@ -3,9 +3,10 @@
 
 {% block main %}
             <h1>自己紹介</h1>
+            <h2>本塁打実績</h2>
+            <p>{% now "Y年m月d日 H時i分" %}現在</p>
+            <p>打者として{{num_services|intcomma}}本の本塁打を打ちました</P>
             <h2>実績</h2>
-            <p>{% now "Y年m月d日 H時i分" %}現在{{ num_services|intcomma }}個のサービスを作成しました。</p>
-            <h2>スキル</h2>
             <ul>
                 {% for skill in skills %}
                 <li>{{ skill }}</li>
